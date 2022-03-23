@@ -1,0 +1,3 @@
+im trying to writing a string into the file !!
+using fprintf test!!! 
+fady,sd,AS,D
