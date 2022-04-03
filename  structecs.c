@@ -21,7 +21,7 @@ int main()
     FILE* fptr, * fptr1;
 
     //Open file to write and check if you succeed
-    fopen( "/Users/fadyzarka/Desktop/workVS/ECS.bin", "wb");
+    fopen( "ECS.bin", "wb");
     if (fptr == NULL) return  0;
     
     //Read data into array of struct (Name, year) - 5 elements
@@ -49,7 +49,7 @@ int main()
     fwrite(sizeof(struct Students), 5, fptr);
     fclose(fptr);
     //Open the file to read
-    fopen( "/Users/fadyzarka/Desktop/workVS/ECS.bin", "rb");
+    fopen( "ECS.bin", "rb");
     if (fptr1 == NULL) return  0;
     //Read all the structs from the file (5 structs)
     fread(&sArray, sizeof(struct Students), 5, fptr1);
